@@ -24,12 +24,12 @@ var happy = true; 
 
 function killSelf(){ 
 
-    console.log("You die!"); 
+    return "You die!"; 
 } 
 
 function liveOn(){ 
 
-    console.log("Be happy!"); 
+    return "Be happy!"); 
 } 
 
 if (!(rich || happy)){ 
@@ -53,10 +53,10 @@ else 
 var urgent = false; 
 var important = false; 
 function usepostOffice(){ 
-console.log("Use Post Office!"); 
+    return "Use Post Office!"; 
 } 
 function useFedex(){ 
-console.log("Use Fedex!"); 
+    return"Use Fedex!"; 
 } 
 if (!urgent || !important){ 
      usepostOffice(); 
@@ -95,7 +95,7 @@ else 
 // ANSWER:  
  
 if ((x <= 10 || y >= 15)) 
-    alert("You got it!"); 
+    return "You got it!"; 
 else 
     prompt("What you need?"); 
  
@@ -103,13 +103,13 @@ else 
 //6) Can you restate the conditional to use only one negation? 
  
 if ( !(x < 10) || y <= 10 || z <= 25 || !dead ) { 
-    console.log("You know your DeMorgan's Laws"); 
+    return "You know your DeMorgan's Laws"; 
 } 
  
 // ANSWER: 
  
 if ( !(x >= 10 && y > 10 && z > 25 && dead)) { 
-    console.log("You know your DeMorgan's Laws"); 
+    return "You know your DeMorgan's Laws"; 
 } 
   
  
@@ -187,11 +187,11 @@ function coinFlip(){ 
  
 function coinFlip() { 
     let flip = Math.floor(Math.random() * 2) + 1; 
- if (flip === 1){ 
-  console.log("heads"); 
+    if (flip === 1){ 
+        return "heads"; 
 } 
-else { 
-console.log("butts"); 
+    else { 
+        return "butts"; 
 } 
 } 
 coinFlip(); 
